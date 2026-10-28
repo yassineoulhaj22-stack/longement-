@@ -6,7 +6,7 @@ body{background:var(--bg);color:var(--ink);padding:env(safe-area-inset-top) 0 en
 #splash{justify-content:center;align-items:center;text-align:center}
 h1{font-size:26px}h2{font-size:22px}h3{font-size:17px;margin-top:8px}small{font-size:12px;font-weight:400}
 .mu{color:#5b6477;font-size:14px;line-height:1.4}.acc{color:var(--r)}.ctr{text-align:center}
-.logo{width:64px;height:64px;border-radius:18px;background:#EEF0FF;color:var(--r);font:800 30px/64px system-ui;text-align:center;margin:0 auto}
+.logo{width:64px;height:64px;border-radius:18px;background:#EEF0FF;display:grid;place-items:center;margin:0 auto}.logo img{width:40px;height:auto}
 label{display:grid;gap:6px;font-size:13px;font-weight:600}
 input,textarea{border:0;background:var(--bl);border-radius:14px;padding:14px;font-size:15px;width:100%}
 textarea{min-height:90px}

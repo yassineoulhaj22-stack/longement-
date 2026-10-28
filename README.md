@@ -9,3 +9,6 @@ Application de location de studios à Rabat (Capacitor + HTML/CSS/JS).
 
 ## Modifier l'app
 Tout le code est dans `www/` (`index.html`, `style.css`, `app.js`). Remplacez les dégradés par de vraies photos dans `www/img/`.
+
+## Icône
+Logo dans `www/img/logo.png`; icônes Android dans `resources/android/` (copiées automatiquement par le workflow).
