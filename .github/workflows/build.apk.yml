@@ -15,8 +15,10 @@ jobs:
       - run: '[ -d android ] || npx cap add android'
       - name: Icône Havaura
         run: |
-          rm -rf android/app/src/main/res/mipmap-anydpi-v26
-          cp -r resources/android/mipmap-* android/app/src/main/res/
+          if [ -d resources/android ]; then
+            rm -rf android/app/src/main/res/mipmap-anydpi-v26
+            cp -r resources/android/mipmap-* android/app/src/main/res/
+          fi
       - run: npx cap sync android
       - run: cd android && chmod +x gradlew && ./gradlew assembleDebug
       - uses: actions/upload-artifact@v4
